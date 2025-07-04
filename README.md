@@ -16,23 +16,22 @@ If you find meaningful errors in the code or have questions, please contact Fran
 * environment_LRP.yml : specifies python packages needed to run the LRP notebook
 
 ## data
-All the data analyzed in the paper is publicly available at ERA5: 
+All the data analyzed in the paper is publicly available at the ERA5 reanalysis dataset, produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) as part of the Copernicus Climate Change Service (C3S),  [https://cds.climate.copernicus.eu/cdsapp#!/dataset/] 
 
 This include:
 
-* **Daily precipitation (pr)**;
-* **Daily Specific humidity (q)**;
-* **Daily Surface pressure (sp)**;
-* **Daily Zonal wind (u)**;
-* **Daily Meridional wind (v)**.
+* **Daily precipitation** : (pr);
+* **Daily Specific humidity** : (q);
+* **Daily Surface pressure** : (sp);
+* **Daily Zonal wind** : (u); 
+* **Daily Meridional wind** (v).
  
-
 Due to the large size of the raw data, they have not been uploaded in this repositry 
 
 ## Steps to run the notebooks:
 1. download this repository  
-2. download pre-processed data [here](https://figshare.com/articles/dataset/Pre-processed_data_for_Davenport_and_Diffenbaugh_2021/14977440) into the processed_data folder. 
-3. install the required python modules using conda. The environment.yml and environment_tf1.yml provide information on the required modules. (The environment_tf1.yml files specifies the tensorflow 1 compatible environment needed to calculate the layerwise relevance propagation - see **notebooks** directory for more details)
+2. download all the variables listed  above from ERA5 from 1984-2023 (the variables q, u, v have to be dowloaded for the pressure level available on ERA5. 
+3. install the required python modules using conda or pip. The environment.yml and environment_LRP.yml provide information on the required modules. (The environment_LRP.yml files specifies the tensorflow 1 compatible environment needed to calculate the layerwise relevance propagation - see **notebooks** directory for more details)
 4. install project_utils in conda environment with the following command (should be run from within the main project directory): 
 ```bash
 pip install -e . --user
