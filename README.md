@@ -1,32 +1,40 @@
-# MyProject2025
+## VIMFC as predictor of Extreme Precipitation Events
 
 This repository contains the code and data used in the paper:  
-**"Title of Your Paper"**  
-*Author Names, Journal Name, Year*
+**"Deep Learning-Based Insights into Extreme Precipitation Regional Dynamics over Central Africa Using Moisture Flux Patterns"**  
+*Fernand L. Mouassom · Alain T. Tamoffo · Elsa Cardoso-Bihlo, JGR: Atmosphere, 2025*
 
-## Overview
+If you find meaningful errors in the code or have questions, please contact Frances Davenport
 
-This project investigates XYZ using ABC. The code reproduces the results and figures from the manuscript.
+## Organization of repository 
+* **input_data**: input data used for analysis (not all raw data is included due to size; see details below)
+* **notebooks**: jupyter notebooks and python scripts to read and analyze data, and create figures
+* **processed_data**: processed data from analysis
+* **project_utils**: python utilities used in analysis (see instructions below to install)
+* **figures** : placeholder directory for figure png created by running figure notebooks in **notebooks** directory
+* environment.yml : specifies python packages needed to run notebooks
+* environment_LRP.yml : specifies python packages needed to run the LRP notebook
 
-## Structure
+## data
+All the data analyzed in the paper is publicly available at ERA5: 
 
-- `data/`: Processed datasets used in analysis
-- `notebooks/`: Analysis and figure generation in Jupyter notebooks
-- `src/`: Source scripts for data processing and modeling
-- `figures/`: All figures from the manuscript
-- `environment.yml`: Reproducible conda environment
+This include:
 
-## Getting Started
+* **Daily precipitation (pr)**;
+* **Daily Specific humidity (q)**;
+* **Daily Surface pressure (sp)**;
+* **Daily Zonal wind (u)**;
+* **Daily Meridional wind (v)**.
+ 
 
-To set up the environment:
+Due to the large size of the raw data, they have not been uploaded in this repositry 
 
+## Steps to run the notebooks:
+1. download this repository  
+2. download pre-processed data [here](https://figshare.com/articles/dataset/Pre-processed_data_for_Davenport_and_Diffenbaugh_2021/14977440) into the processed_data folder. 
+3. install the required python modules using conda. The environment.yml and environment_tf1.yml provide information on the required modules. (The environment_tf1.yml files specifies the tensorflow 1 compatible environment needed to calculate the layerwise relevance propagation - see **notebooks** directory for more details)
+4. install project_utils in conda environment with the following command (should be run from within the main project directory): 
 ```bash
-conda env create -f environment.yml
-conda activate myproject2025
+pip install -e . --user
 ```
-
-Then run the notebooks or scripts in `src/`.
-
-## License
-
-This work is licensed under the MIT License.
+5. run and/or edit the notebooks. ////////////////
