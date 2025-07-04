@@ -16,7 +16,7 @@ If you find meaningful errors in the code or have questions, please contact Fran
 * environment_LRP.yml : specifies python packages needed to run the LRP notebook
 
 ## data
-All the data analyzed in the paper is publicly available at the ERA5 reanalysis dataset, produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) as part of the Copernicus Climate Change Service (C3S),  [https://cds.climate.copernicus.eu/cdsapp#!/dataset/] 
+All the data analyzed in the paper is publicly available at the ERA5 reanalysis dataset, produced by the European Centre for Medium-Range Weather Forecasts (ECMWF) as part of the Copernicus Climate Change Service (C3S) : [ERA5 dataset on Copernicus for Precipitation](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview) and [ERA5 dataset on Copernicus for other variables](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=overview)
 
 This include:
 
