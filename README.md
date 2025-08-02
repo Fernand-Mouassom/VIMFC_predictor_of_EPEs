@@ -9,10 +9,9 @@ If you find meaningful errors in the code or have questions, please contact Fran
 ## Organization of repository 
 * **input_data**: input data used for analysis (not all raw data is included due to size; see details below)
 * **notebooks**: jupyter notebooks and python scripts to read and analyze data, and create figures
+* **ncl_code** : directory for codes used to calculate vertically integrated moisture flux convergence (VIMFC), and the stream function for the Congo basin cell intensity. This was done using **ncl** for reasons of efficiency and speed compared to **Python**.
 * **processed_data**: processed data from analysis
-* **project_utils**: python utilities used in analysis (see instructions below to install)
 * **figures** :  directory for figure png created by running figure notebooks in **notebooks** directory
-* **ncl_code** : Directory for codes used to calculate vertically integrated moisture flux convergence (VIMFC), and the stream function for the Congo basin cell intensity. This was done using **ncl** for reasons of efficiency and speed compared to **Python**.
 * environment.yml : specifies python packages needed to run notebooks
 * environment_LRP.yml : specifies python packages needed to run the LRP notebook
 
