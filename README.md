@@ -31,8 +31,8 @@ Due to the large size of the raw data, they have not been uploaded in this repos
 ## Steps to run the notebooks:
 1. download this repository  
 2. download all the variables listed  above from ERA5 from 1984-2023 (the variables q, u, v have to be dowloaded for the pressure level available on ERA5. 
-3. install the required python modules using conda or pip. The environment.yml and environment_LRP.yml provide information on the required modules. (The environment_LRP.yml files specifies the tensorflow 1 compatible environment needed to calculate the layerwise relevance propagation - see **notebooks** directory for more details)
-4. install project_utils in conda environment with the following command (should be run from within the main project directory): 
+3. use the ncl codes provided into **ncl_code** directory to compute the vertically Integrated moisture flux convergence and the stream fuction for the congo basin cell intensity
+4. install the required python modules using conda or pip. The environment.yml and environment_LRP.yml provide information on the required modules. (The environment_LRP.yml files specifies the tensorflow 1 compatible environment needed to calculate the layerwise relevance propagation - see **notebooks** directory for more details) 
 ```bash
 pip install -e . --user
 ```
