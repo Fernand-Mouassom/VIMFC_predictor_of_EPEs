@@ -1,7 +1,7 @@
 ## VIMFC as predictor of Extreme Precipitation Events
 
-This repository contains the code and data used in the paper:  
-**"Deep Learning-Based Insights into Extreme Precipitation Regional Dynamics over Central Africa Using Moisture Flux Patterns"**  
+This repository contains the code and data used in the paper:
+**"Convolutional Neural Network-Based Insights into Extreme Precipitation Regional Dynamics over Central Africa Using Moisture Flux Patterns"**
 *Fernand L. Mouassom · Alain T. Tamoffo · Elsa Cardoso-Bihlo, JGR: Atmosphere, 2025*
 
 If you find meaningful errors in the code or have questions, please contact Frances Davenport
@@ -11,7 +11,8 @@ If you find meaningful errors in the code or have questions, please contact Fran
 * **notebooks**: jupyter notebooks and python scripts to read and analyze data, and create figures
 * **processed_data**: processed data from analysis
 * **project_utils**: python utilities used in analysis (see instructions below to install)
-* **figures** : placeholder directory for figure png created by running figure notebooks in **notebooks** directory
+* **figures** :  directory for figure png created by running figure notebooks in **notebooks** directory
+* **ncl_code** : Directory for codes used to calculate vertically integrated moisture flux convergence (VIMFC), and the stream function for the Congo basin cell intensity. This was done using **ncl** for reasons of efficiency and speed compared to **Python**.
 * environment.yml : specifies python packages needed to run notebooks
 * environment_LRP.yml : specifies python packages needed to run the LRP notebook
 
